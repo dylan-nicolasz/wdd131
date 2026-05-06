@@ -9,11 +9,10 @@ header {
     display: grid;
     height: 30vh;
     grid-template-columns: 80% 20%;
-    position: relative;
 }
 
 nav {
-    margin: auto auto auto;
+    border: 10fr;
 }
 
 .navigation {
