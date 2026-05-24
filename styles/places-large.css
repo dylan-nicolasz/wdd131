@@ -1,0 +1,20 @@
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .hero-container {
+        grid-column: 1 / -1;
+    }
+
+    .weather-icon-mobile {
+        display: none; 
+    }
+
+    .weather-heading::after {
+        content: " 📍"; 
+        font-size: 1.2rem;
+    }
+}

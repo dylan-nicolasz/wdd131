@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quito, Ecuador - Travel Guide</title>
+    <meta name="description" content="Explore Quito, Ecuador: Key information, current weather conditions, and wind chill factor for WDD 131.">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quito, Ecuador</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/quitodef.jpg" >
+                <img src="images/quitodef.jpg" alt="Panoramic view of historic center of Quito" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="data-card">
+            <h2>Data Center</h2>
+            <ul>
+                <li><strong>Area:</strong> 372.4 km²</li>
+                <li><strong>Population:</strong> 2.8 Million</li>
+                <li><strong>Capital:</strong> Yes (of Ecuador)</li>
+                <li><strong>Language:</strong> Spanish</li>
+                <li><strong>Currency:</strong> US Dollar</li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2 class="weather-heading">Weather ⛅</h2>
+            <img src="images/weather-icon.svg" alt="Weather condition icon" class="weather-icon-mobile">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp-value">9</span>°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind Speed:</strong> <span id="wind-value">12</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill-value">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Dylan    Zurita | Ecuador</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

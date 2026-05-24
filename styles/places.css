@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #001f3f;       /* Deep Blue */
+    --secondary-color: #ffdc00;     /* Yellow accents from flag */
+    --text-color: #333333;
+    --background-light: #f4f4f4;
+    --card-background: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.data-card, .weather-card {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.data-card h2, .weather-card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--background-light);
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.weather-icon-mobile {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 900px; /* Evita que la imagen crezca infinitamente en pantallas grandes */
+    margin: 0 auto;   /* Centra la imagen en la pantalla */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 350px;    /* Le da una altura fija fija para que parezca un banner (Hero) */
+    object-fit: cover; /* Recorta la imagen elegantemente para que no se deforme ni se estire */
+    display: block;
+}
