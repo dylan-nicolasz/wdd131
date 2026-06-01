@@ -58,11 +58,6 @@ h1{
 .show li {
 	display: block;
 }
-nav:hover {
-    text-decoration: underline;
-    background-color: rgb(194, 216, 197);
-    color: black;
-}
 
 #menu.show::before {
 	content: "X";

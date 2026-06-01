@@ -1,0 +1,57 @@
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+    #menu {
+        display: none;
+    }
+    nav:hover {
+        text-decoration: underline;
+        background-color: rgb(194, 216, 197);
+        color: black;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: row;
+        gap: 70px;
+        list-style: none;
+        padding: 20px;
+    }
+
+    .navigation a {
+        font-size: large;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    .gallery {
+        display: grid;
+        max-width:  1000px;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px;
+        margin: 0 auto;
+    
+    }
+    .gallery figure {
+    text-align: center;
+    margin: 0;
+    }
+
+    .gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+}
