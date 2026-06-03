@@ -63,9 +63,103 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Quito, Ecuador",
+    location: "Quito, Ecuador",
+    dedicated: "2022, Novemeber, 20",
+    area: 36780,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/quito-ecuador-temple/quito-ecuador-temple-31202-main.jpg"
+  },
+  {
+    templeName: "Bogota Colombia",
+    location: "Bogota DC, Colombia ",
+    dedicated: "1999, April, 24",
+    area: 53500,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7733-main.jpg"
+  },
+  {
+    templeName: "Recife Brazil",
+    location: " Recife, Brazil ",
+    dedicated: "2000, December, 15",
+    area: 37200,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-main.jpg"
+  }
+  
+  
 ];
 
-document.getElementById("last-modified").innerHTML = document.lastModified;
+const gallery = document.querySelector(".gallery");
 
+createTemplecards(temples);
+const oldTemplesLink = document.querySelector("#oldTemples");
+oldTemplesLink.addEventListener ("click", () => {
+  createTemplecards (temples.filter(temple => {
+    const year = parseInt (temple.dedicated);
+    return year <1900;
+  })
+);
+});
+
+const newTemplesLink = document.querySelector("#newTemples");
+newTemplesLink.addEventListener ("click", () => {
+  createTemplecards (temples.filter(temple => {
+    const year = parseInt (temple.dedicated);
+    return year >2000;
+  })
+);
+});
+const largeTemplesLink = document.querySelector("#largeTemples");
+largeTemplesLink.addEventListener ("click", () => {
+  createTemplecards (temples.filter(temple =>
+    temple.area > 90000)
+  );
+});
+
+const smallTemplesLink = document.querySelector("#smallTemples");
+smallTemplesLink.addEventListener ("click", () => {
+  createTemplecards (temples.filter(temple =>
+    temple.area <  10000)
+  );
+});
+function createTemplecards (filteredTemples) {
+  document.querySelector(".gallery").innerHTML = "";
+  filteredTemples.forEach (temple => {
+
+      const card = document.createElement("section");
+
+      const name = document.createElement("h3");
+      name.textContent = temple.templeName;
+
+      const location = document.createElement("p");
+      location.innerHTML = `<span>Location:</span> ${temple.location}`;
+
+      const dedicated = document.createElement ("p");
+      dedicated.innerHTML = `<span>Dedicated:</span> ${temple.dedicated}`;
+
+      const size = document.createElement("p");
+      size.innerHTML = `<span>Size:</span> ${temple.area}`;
+
+      const img = document.createElement("img");
+      img.src = temple.imageUrl;
+      img.alt = temple.templeName;
+      img.loading = "lazy";
+
+
+
+      card.append(
+          name,
+         location,
+          dedicated,
+          size,
+          img
+      );
+
+      gallery.appendChild(card);
+  });
+}
+
+document.getElementById("last-modified").innerHTML = document.lastModified;
 
