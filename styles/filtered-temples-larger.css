@@ -22,7 +22,6 @@
 
     .navigation {
         display: flex;
-        flex-wrap: row;
         gap: 70px;
         list-style: none;
         padding: 20px;
