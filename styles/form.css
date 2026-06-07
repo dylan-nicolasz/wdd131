@@ -1,0 +1,95 @@
+/* General Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-color: #375e9d;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+form {
+    background-color: #ddd8df;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+}
+
+.optional-text {
+    font-size: 0.9rem;
+}
+
+.stars label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.stars input {
+    margin-right: 5px;
+}
+
+fieldset label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+#post {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #375e9d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
