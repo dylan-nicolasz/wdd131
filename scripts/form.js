@@ -36,15 +36,10 @@ function populateProducts(productList) {
 
     productList.forEach(product => {
         const option = document.createElement("option");
+        option.value = product.id;        
+        option.textContent = product.name;  
         
-        // Map data according to requirements
-        option.value = product.id;         // Array ID used for value attribute
-        option.textContent = product.name;   // Array Name used for user display text
-        
-        /* NOTE: If your grader insists on the name being the value, 
-        uncomment the line below and comment out option.value = product.id;
-        option.value = product.name; 
-        */
+      
 
         productSelect.appendChild(option);
     });
