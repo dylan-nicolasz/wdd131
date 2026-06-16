@@ -4,51 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profbook Main page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-larger.css">
+    <script src="scripts/main.js" defer></script>
     <meta name="author" content="Dylan Zurita">
     <meta name="description" content="Profbook main page, contains a biref description of the purpose of profbook, how it works and links to 2 child pages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img id="logo" src="images/profbook.avif" alt="logo">
-        <h3 class="slogan">Find them, hire them</h3>
+
+           <button id="menu-btn" aria-label="Menu"> ☰ </button>
 
         <nav>
             <ul class="navigation">
                 <li> <a href="main.html" title="Home">Home</a></li>
-                <li> <a href="#" title="Services">Services</a></li>
+                <li> <a href="#" title="Services">Our Services</a></li>
                 <li> <a href="book.html" title="Book">Book</a></li>
                 <li> <a href="#" title="Contact">Contact</a></li>
-                <li> <a href="#" title="Login ">Login</a></li>
+                <li> <a href="signup.html" title="Signup">Sign up</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="start-box">
-            <img src="" alt="">
-            <h1>FIND THEM, HIRE THEM</h1>
-            <p>-----------------------------------------</p>
-            <button type="button" id="bookbutton">Book</button>
-        </section>
 
-        <h2>About Us</h2>
+            <div class="hero-images">
+                <img id="netwmap" src="images/networking-map.avif" alt="networkingmap">
+            </div>
+            <div class="hero-content">
+                <h1>FIND THEM, HIRE THEM</h1>
+                <p>-----------------------------------------</p>
+                <a id="bookbtn" href="book.html" title="Book">Book</a></li>
+            </div>
+        </section>
 
         <section class="about-us">
             <div class="you-box">
                 <h3>We want you...</h3>
                 <img src="" alt="">
-                <p></p>
+                <p>
+                    Share what you do, inspire others, and help people discover the services they have been looking for. 
+                    Whether you're a designer, marketer, developer, or specialist in another field, there's a place for you here.
+                </p>
             </div>
             <div class="us-box">
-                <h3>...and you want us</h3>
+                <h3>...and you want us.</h3>
                 <img src="" alt="">
-                <p></p>
+                <p>ProfBook helps you get noticed. 
+                    We connect professionals with people who need your skills and services. 
+                    By joining our platform, you can reach new opportunities, grow your network, and find people who are looking for exactly what you have to offer.
+                </p>
             </div>
         </section>
     </main>
     <footer>
-        <p>
-        &copy; <span id="year"></span> Dylan Zurita, Quito-Ecuador</p>
-        <p id="last-modified"></p>
+        <img id="footer-logo" src="images/profbook.avif" alt="logo">
+
+        <div class="footer-info1">
+            <ul>
+                <li>Expert matching</li>
+                <li>Reliable professionals</li>
+                <li>Talent network</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Get in touch</h4>
+            <ul>
+                <li>☎️ 099 947 1324</li>
+                <li>📧 support@profbook.biz</li>
+                <li>📍 Quito, Ecuador</li>
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li> <a href="main.html" title="Home">Home</a></li>
+                <li> <a href="book.html" title="Book">Book</a></li>
+                <li> <a href="#" title="Services">Our Services</a></li>
+            </ul>
+
+        </div>
     </footer>
 </body>
 </html>

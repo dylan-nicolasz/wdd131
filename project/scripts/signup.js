@@ -1,28 +1,23 @@
 const products = [
   {
     id: "fc-1888",
-    name: "flux capacitor",
-    averagerating: 4.5
+    name: "Student",
   },
   {
     id: "fc-2050",
-    name: "power laces",
-    averagerating: 4.7
+    name: "Enterpreneur",
   },
   {
     id: "fs-1987",
-    name: "time circuits",
-    averagerating: 3.5
+    name: "Business owner",
   },
   {
     id: "ac-2000",
-    name: "low voltage reactor",
-    averagerating: 3.9
+    name: "HH. RR. Manager  ",
   },
   {
     id: "jj-1969",
-    name: "warp equalizer",
-    averagerating: 5.0
+    name: "Company employee ",
   }
 ];
 
@@ -31,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function populateProducts(productList) {
-    const productSelect = document.getElementById("prodmenu");
+    const productSelect = document.getElementById("infomenu");
     if (!productSelect) return;
 
     productList.forEach(product => {
@@ -40,11 +35,24 @@ function populateProducts(productList) {
         option.value = product.id;        
         option.textContent = product.name;  
         
-      
-
+        
         productSelect.appendChild(option);
     });
 }
+
+const inputPassword = document.getElementById("pwd");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener ("click", () => {
+  if (inputPassword.type === 'password'){
+    inputPassword.type = 'text';
+    togglePassword.textContent = '🔒';
+  }
+  else {
+    inputPassword.type = 'password';
+    togglePassword.textContent = '👁';
+  }
+});
 
 document.getElementById("last-modified").innerHTML = document.lastModified;
 

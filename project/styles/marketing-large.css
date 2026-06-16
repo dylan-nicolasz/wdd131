@@ -1,0 +1,107 @@
+@media screen and (max-width: 790px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 70px;
+        margin-left: 0;
+    }
+
+
+    #menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin: 15px 0 0 0;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+
+    h1 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+
+    .box-first {
+        margin: 20px;
+    }
+
+    .box-first p {
+        font-size: 1rem;
+    }
+
+
+    .marketing-mat-card {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #mateo-alejo {
+        display: block;
+        width: 150px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    #description {
+        margin-top: 0;
+        text-align: center;
+    }
+    .profile-info {
+    grid-template-columns: 1fr;
+    text-align: center;
+    }
+
+    #mateo-alejo {
+        margin: 0 auto;
+    }
+
+    .exp, .proj, .contact-info {
+        margin-top: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        margin: 10px;
+    }
+
+    #footer-logo {
+        width: 70px;
+        height: auto;
+    }
+
+    .quick-links, .footer-contact, .footer-info1 {
+        width: 100%;
+    }
+
+    .quick-links ul, .footer-contact ul, .footer-info1 ul {
+        list-style: none;
+    }
+}

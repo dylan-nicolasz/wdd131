@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page, Login Profbook</title>
+    <meta name="author" content="Dylan Zurita">
+    <meta name="description" content="Form page, login info for users entering profbook. Users will provide their names, email, reason">
+    <script src="scripts/signup.js" defer></script>
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="styles/signup-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sign up to Profbook</h1>
+    </header>
+    <main>
+
+        <div class="left-side">
+            <img id="logo-signup" src="images/profbook.avif" alt="Profbook logo">
+    
+            <img id="net-signup-img" src="images/netw.jpeg" alt="Professional networking illustration">
+        </div>
+        <form action="main.html" method="get">
+
+            <fieldset>
+                <label for="name">Your full name</label>
+                <input type="text" name="name" id="name" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="uname">Username</label>
+                <input type="text" name="username" id="uname" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="pwd">Password: </label>
+                <input type="password" name="password" id="pwd" required>
+                <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">👁</button>
+            </fieldset>
+
+            <fieldset>
+                <label for="infomenu">I am a...</label>
+                <select name="info" id="infomenu" required>
+                    <option value="" disabled selected>Select one</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <div class="reason">
+                    <label for="reason">Are you?</label>
+	                <input type="radio" id="hiring" name="reason" value="hiring" required><label for="hiring">Hiring</label>
+	                <input type="radio" id="applying" name="reason" value="applying" required><label for="applying">Applying</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Do you accept to the privacy policies?</legend>
+                    <label for="yes"><input type="checkbox" name="yes" id="yes" value="yes" required>Yes</label>   
+                    <label for="yesin"><input type="checkbox" name="yesin" id="yesin" value="yes" required>Yes, indeed</label>  
+            </fieldset>
+
+            <div class="submit">
+                <input type="submit" name="postreview" id="post" value="Create account">
+            </div>
+        </form>
+
+    </main>    
+    <footer>
+        <p>
+        &copy; <span id="year"></span> Profbook, Quito-Ecuador</p>
+    </footer>
+</body>
+</html>

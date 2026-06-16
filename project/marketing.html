@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book page</title>
+    <title>Digital Marketing Page and Profiles</title>
     <meta name="author" content="Dylan Zurita">
-    <meta name="description" content="Profbook secondary page, the 'book' page is the directory itself, presenting cards with the info of the profession ">
-    <link rel="stylesheet" href="styles/book.css">
-    <link rel="stylesheet" href="styles/book-larger.css">
-    <script src="scripts/book.js" defer></script>
+    <meta name="description" content="Page to present one of the profession profbook has, it's not gonna focus on digital marketing itself, but on the professionals working in that area.">
+    <link rel="stylesheet" href="styles/marketing.css">
+    <link rel="stylesheet" href="styles/marketing-large.css">
+    <script src="scripts/marketing.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <img id="logo" src="images/profbook.avif" alt="logo">
+        <img id="logo" src="images/profbook.avif" alt="ProfBook logo">
 
-          <button id="menu-btn" aria-label="Menu"> ☰ </button>
+        <button id="menu-btn"> ☰ </button>
 
         <nav>
             <ul class="navigation">
@@ -26,34 +25,43 @@
                 <li> <a href="#" title="Services">Our Services</a></li>
                 <li> <a href="book.html" title="Book">Book</a></li>
                 <li> <a href="#" title="Contact">Contact</a></li>
-                <li> <a href="signup.html" title="Signup">Sign up</a></li>
+                <li> <a href="signup.html" title="Signup ">Sign up</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Book</h1>
+        <h1>Digital Marketing</h1>
 
-        <div class="box-container">
+        <section class="box-first">
+            <p>"Content is king." — Bill Gates</p>
+        </section>
 
-            <section class="marketing-box">
-                <h2>Marketing</h2>
+        <h2>Presenting our Profbook professionals...</h2>
 
-                <img id="marketing-img" src="images/digital-marketing.webp" alt="marketing">
-                <p>Helping businesses build their presence and connect with the right audience online.</p>
-                <a class="explore-btn" href="marketing.html" title="explore">Explore</a></li>
-            </section>
+        <section class="marketing-mat-card">
+            <h3>Panecillo Marketing Productions</h3>
 
-            <section class="graphic-box">
-                <h2>Graphic Design</h2>
-                <img id="design-img" src="images/graph-des.png" alt="graphic design">
-                <p>Transforming ideas into impactful and memorable visual experiences.</p>
-                <a class="explore-btn" href="#" title="explore">Explore</a></li>
-            </section>
-        </div>
+            <div class="profile-info">
+                <img id="mateo-alejo" src="images/pic-logo.png" alt="Panecillo Marketing Productions team">
 
-        <section class="more-box">
-            <h3>More professionals are coming, for you and the benefit of your company...</h3>
+                <p id="description">(description of the professional or team)</p>
+            </div>
+
+            <div class="exp">
+                <h3>Experience</h3>
+                <h4>Worked with MoCondimentos</h4>
+            </div>
+            <div class="proj">
+                <h3>Projects</h3>
+
+                <h4>Working with MoCondimentos</h4>
+            </div>
+            <div class="contact-info">
+                <h3>Contact info</h3>
+                <p>📞 098 309 0417</p>
+            </div>
+
         </section>
     </main>
 
@@ -85,6 +93,7 @@
             </ul>
 
         </div>
+        
     </footer>
 </body>
 </html>

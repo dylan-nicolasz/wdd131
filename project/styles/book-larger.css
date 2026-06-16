@@ -1,0 +1,72 @@
+@media screen and (max-width: 790px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+	.cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .marketing-box,
+    .graphic-box {
+        min-height: auto;
+    }
+
+    #marketing-img,
+    #design-img {
+        max-width: 250px;
+    }
+
+    header {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+	footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        width: auto;
+    }
+
+    #footer-logo {
+        width: 70px;
+    }
+
+    .quick-links, .footer-contact, .footer-info1 {
+        width: 100%;
+    }
+
+    .quick-links ul, .footer-contact ul, .footer-info1 ul {
+        list-style: none;
+    }
+}

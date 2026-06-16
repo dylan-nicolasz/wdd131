@@ -1,0 +1,116 @@
+/* General Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-color: #034787;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Work Sans";
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#net-signup-img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+form {
+    border: 5px solid rgb(106 0 25);
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    font-family: "Work Sans";
+    
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+}
+
+fieldset label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+#post {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo-signup {
+    width: 150px;
+}
+
+#net-signup-img {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+footer {
+    background-color: #034787;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}

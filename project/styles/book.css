@@ -1,0 +1,178 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+    margin: 20px;
+    padding: 20px;
+    border-top: 4px solid  rgb(106 0 25);
+    border-bottom: 4px solid  rgb(106 0 25);
+    display: flex;
+	justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 120px;
+    width: 700px;
+
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Work Sans";
+}
+
+.navigation a:hover {
+    padding: 10px;
+    color: #034787;
+    box-shadow: 0 8px 15px  #034787;
+    border-radius: 10px;
+}
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#logo, #footer-logo{
+    width: 90px;
+    height: auto;
+}
+
+#logo{
+    margin-left: 100px;
+}
+
+#footer-logo{
+    width: 95px;
+    height: 120px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: "Work Sans";
+    
+}
+
+h2{
+    border-bottom: 2px solid;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.marketing-box,
+.graphic-box {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+    min-height: 420px;
+}
+
+.marketing-box h2{
+    background-color: #086F59;
+    color: white;
+}
+
+#marketing-img, #design-img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+}
+
+p{
+    font-family: "Work Sans";
+}
+
+.explore-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 120px;
+    text-decoration: none;
+    color: white;
+    background-color: #086F59;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-family: "Work Sans";
+
+}
+
+.explore-btn:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px  #086F59
+}
+
+.graphic-box h2{
+    background-color: rgb(106 0 25) ;
+    color: white;
+}
+
+
+
+.graphic-box .explore-btn {
+    background-color: rgb(106, 0, 25);
+}
+
+.graphic-box .explore-btn:hover {
+    box-shadow: 0 8px 15px rgb(106, 0, 25);
+}
+
+h3 {
+    font-family: "Work Sans";
+    font-weight: 500;
+}
+
+
+.quick-links ul li, .footer-contact ul li, .footer-info1 ul li{
+    padding: 10px;
+}
+
+.quick-links ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.quick-links ul a:hover {
+    text-decoration: underline #034787;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin: 20px;
+    border-bottom: 4px solid  rgb(106 0 25);
+    color: black;
+    width: 100%;
+    font-family: "Work Sans";
+}
+
+h4{
+    color: #034787;;
+}
