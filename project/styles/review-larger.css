@@ -1,0 +1,57 @@
+@media screen and (max-width: 790px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 70px;
+        margin-left: 0;
+    }
+
+
+    #menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin: 15px 0 0 0;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        margin: 10px;
+    }
+
+    #footer-logo {
+        width: 70px;
+        height: auto;
+    }
+
+    .quick-links, .footer-contact, .footer-info1 {
+        width: 100%;
+    }
+
+    .quick-links ul, .footer-contact ul, .footer-info1 ul {
+        list-style: none;
+    }
+}

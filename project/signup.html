@@ -24,31 +24,31 @@
     
             <img id="net-signup-img" src="images/netw.jpeg" alt="Professional networking illustration">
         </div>
-        <form action="main.html" method="get">
+        <form action="review.html" method="get">
 
             <fieldset>
-                <label for="name">Your full name</label>
+                <label for="name">Your full name *</label>
                 <input type="text" name="name" id="name" required>
             </fieldset>
 
             <fieldset>
-                <label for="email">Your email</label>
+                <label for="email">Your email *</label>
                 <input type="email" name="email" id="email" required>
             </fieldset>
 
             <fieldset>
-                <label for="uname">Username</label>
+                <label for="uname">Username *</label>
                 <input type="text" name="username" id="uname" required>
             </fieldset>
 
             <fieldset>
-                <label for="pwd">Password: </label>
+                <label for="pwd">Password: * </label>
                 <input type="password" name="password" id="pwd" required>
                 <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">👁</button>
             </fieldset>
 
             <fieldset>
-                <label for="infomenu">I am a...</label>
+                <label for="infomenu">I am a... *</label>
                 <select name="info" id="infomenu" required>
                     <option value="" disabled selected>Select one</option>
                 </select>
@@ -56,14 +56,14 @@
 
             <fieldset>
                 <div class="reason">
-                    <label for="reason">Are you?</label>
+                    <label for="reason">Are you? *</label>
 	                <input type="radio" id="hiring" name="reason" value="hiring" required><label for="hiring">Hiring</label>
 	                <input type="radio" id="applying" name="reason" value="applying" required><label for="applying">Applying</label>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Do you accept to the privacy policies?</legend>
+                <legend>Do you accept to the privacy policies? *</legend>
                     <label for="yes"><input type="checkbox" name="yes" id="yes" value="yes" required>Yes</label>   
                     <label for="yesin"><input type="checkbox" name="yesin" id="yesin" value="yes" required>Yes, indeed</label>  
             </fieldset>
